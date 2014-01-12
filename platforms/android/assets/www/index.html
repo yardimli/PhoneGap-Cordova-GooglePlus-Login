@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=5, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+        
+        
+        <title>Hello World</title>
+    </head>
+    <body>
+
+
+   <div class="container">
+            <div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/RealtimeGeolocationNode/">
+                    <strong>&laquo; Never Ending Stories</strong>
+                </a>
+            </div>
+			
+			<header>
+				<h1>Never Ending Stories</h1>
+				<h2>Release your Creativity and make Magic</h2>
+			</header>
+			
+			<section class="main">
+				<form class="form-2">
+					<h1><span class="log-in">Sign up with Google+</span> or <span class="sign-up">Fill in the blanks</span></h1>
+					
+					<center>
+						<div onclick="capturePhoto();" class="sign-up-photo-box">
+
+						  <img class="sign-up-photo-style" id="smallImage" src="img/profile-placeholder.gif" />
+						  <div id="clicktext" class="sign-up-photo-text"><center>Click here to<br> take a picture or sign up with Google+</center></div>
+						</div>  
+					</center>
+					
+					<p style="margin-top:4px">
+						<label for="login"><i class="fa fa-user"></i>Name</label>
+						<input type="text" name="login" id="RealName" placeholder="Real Name">
+					</p>
+					<p>
+						<label for="login"><i class="fa fa-envelope-o"></i>E-mail</label>
+						<input type="text" name="login" id="EMailx" placeholder="Email">
+					</p>
+					<p style="margin-bottom:18px;">
+						<label for="password"><i class="fa fa-lock"></i>Password</label>
+						<input type="password" name="password" placeholder="Password" id="passwordx" class="showpassword">
+					</p>
+					<p class="clearfix"> 
+						<a href="#" class="log-twitter" id="use-googleplus">Sign up with Google+</a>    
+						<input type="button" class="sign-up-button" value="Sign up" id="SignUpDone">
+					</p>
+				</form>​​
+			</section>
+			
+        </div>
+<!--  
+      <br>
+      <button id="getfriends" style="width:200px; padding:20px;">Get Friends</button>
+	  <br><br>
+      <div id="results"></div>
+-->        
+            
+		<div class="modal"><!-- Place at bottom of page --></div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
